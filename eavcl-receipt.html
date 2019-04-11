@@ -1,0 +1,285 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EAVCL Receipt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="pull-left">
+				<a href="clientlist.html">
+					<img src="img/back-shevron.png"/> Back
+				</a>
+			</div>
+			<div class="pull-left">
+				<a href="#">
+					<img src="img/edelweiss-logo.png"/>
+				</a>
+			</div>
+			<div class="pull-left">
+				<a href="login.html">
+					<img src="img/logout.png"/>
+				</a>
+			</div>        
+		</div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+		<div class="container">
+         
+    <!-- begin snippet: js hide: false -->
+    
+    <!-- language: lang-css -->
+     
+                <div class="col-md-12 padding-clear">
+                    <ul class="breadcrumb">
+					  <li><a href="index.html">Dashboard</a></li>
+					  <li><a href="#">EAVCL RECEIPT</a></li> 
+					</ul>
+                </div>
+				<div class="clear"></div>
+                
+				<div class="form-container">
+				
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Receipt Number</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder=" " disabled>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Receipt Date</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="" disabled>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-4 col-xs-12">
+						<label class="control-label">Client Name</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="" disabled>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Client Code</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder=" " disabled>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Client Place</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="" disabled>                                         
+						</div>
+					</div>
+					<div class="clear"></div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Payment Mode<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<select id="selectbasic" name="selectbasic" class="form-control input-sm">
+								  <option value="1">Select Payment Mode</option>
+								  <option value="2">Cheque</option>
+								  <option value="3">Draft</option>
+								  <option value="4">NEFT</option>
+								  <option value="5">IMPS</option>
+								  <option value="6">RTGS</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Payment Ref. Number<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Payment Reference Number">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-4 col-xs-12">
+						<label class="control-label">Payment Bank<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Payment Bank">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Bank branch<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Bank Branch">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Pay/DEPt. Date<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id="datepicker" name=" " class="form-control input-sm" placeholder="Select Pay/Dept. Date">                                         
+						</div>
+					</div>
+					<div class="clear"></div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">Pay Type<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<select id="selectbasic" name="selectbasic" class="form-control input-sm">
+								  <option value="1">Select Pay Type</option>
+								  <option value="2">Adhoc</option>
+								  <option value="3">Invoice</option> 
+							</select>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">Payment Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Payment Amount">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">TDS Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter TDS Amount">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">TAN Number</label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="" disabled>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">REC. Type<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<select id="selectbasic" name="selectbasic" class="form-control input-sm">
+								  <option value="1">Select Pay Type</option>
+								  <option value="2">Agency</option>
+								  <option value="3">SCM</option> 
+							</select>                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-12">
+						<label class="control-label">Remarks<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Remarks">                                         
+						</div>
+					</div>
+					<div class="clear"></div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Principle Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Principle amount">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Interest/Delay<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Interest/Delay">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Storage Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Storage amount">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-2 col-xs-6">
+						<label class="control-label">Ohter Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Storage amount">                                         
+						</div>
+					</div>
+					
+					<div class="form-group col-md-4 col-xs-12">
+						<label class="control-label">Net Total Amount<sup>*</sup></label>
+						<div class="col-md-12 padding-clear ">
+							<input type="text" id=" " name=" " class="form-control input-sm" placeholder="Enter Net Total Amount">                                         
+						</div>
+					</div>
+					<div class="clear"></div>
+					
+				</div>
+    
+				<input type="button" id="save" class="btn btn-submit btn-sm" value="Save" />
+
+		
+         
+		</div>
+    </div>
+
+		<script src="js/vendor/jquery.min.js"></script> 
+		<script src="js/vendor/bootstrap-notify.js"></script> 
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+			} );
+		 
+			$('#save').click(function(){ 
+				$.notify({
+					icon: 'glyphicon glyphicon-floppy-disk',
+					title: 'Data saved successfully !', 
+					message: ''
+				},{
+					// settings
+					type: 'success',
+					placement: {
+						from: "bottom",
+						align: "center"
+					},
+					showProgressbar: true,
+					allow_dismiss: true,
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+					delay: 5000,
+					timer: 100000,
+					allow_dismiss: true,
+					template: '<div class="container">' +					
+						'<div data-notify="container" class="col-md-12 alert alert-{0}" role="alert">' +
+							'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+							'<span data-notify="icon" class="icon-notify"></span> ' +
+							'<span data-notify="title" class="title-notify">{1}</span><br/>' +
+							'<span data-notify="message">{2}</span>' + 
+						'</div>' + 
+					'</div>'  
+				});
+			})
+		</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+         
+    </body>
+</html>
